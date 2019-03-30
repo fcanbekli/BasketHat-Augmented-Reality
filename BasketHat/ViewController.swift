@@ -25,6 +25,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    @IBAction func ThrowButton(_ sender: Any) {
+        print("Button Working")
+    }
+    
+    
+    
+    
     @IBAction func didTap(_ sender: UITapGestureRecognizer) {
         let location = sender.location(in: sceneView)
         
@@ -37,12 +44,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     
     func CreateModel(_ position: SCNVector3) -> SCNNode? {
-        guard let modelUrl = Bundle.main.url(forResource: "Models.scnassets/cardbox", withExtension: "obj") else{
+        guard let modelUrl = Bundle.main.url(forResource: "Models.scnassets/cardbox", withExtension: "dae") else{
             NSLog("Cardboard could not found")
             return nil
         }
         guard let node = SCNReferenceNode(url: modelUrl) else {return nil}
-        
+  
         node.load()
         
         node.position = position
@@ -56,6 +63,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let planePosition = SCNVector3Make(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
         
         let modelNode = CreateModel(planePosition)
+        
         sceneView.scene.rootNode.addChildNode(modelNode!)
     }
     private var planeNode: SCNNode?
@@ -66,6 +74,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             return nil
         }
         planeNode = SCNNode()
+        planeNode?.geometry?.firstMaterial?.diffuse.contents = #imageLiteral(resourceName: "texture.jpg")
         return planeNode
         
     }

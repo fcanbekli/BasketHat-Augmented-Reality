@@ -13,6 +13,7 @@
 		FDAC897E224EDCEC00504C10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDAC897C224EDCEC00504C10 /* Main.storyboard */; };
 		FDAC8980224EDCED00504C10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDAC897F224EDCED00504C10 /* Assets.xcassets */; };
 		FDAC8983224EDCED00504C10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDAC8981224EDCED00504C10 /* LaunchScreen.storyboard */; };
+		FDF99D86225012730085B5FF /* texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDF99D85225012730085B5FF /* texture.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FDAC897F224EDCED00504C10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDAC8982224EDCED00504C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDAC8984224EDCED00504C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF99D85225012730085B5FF /* texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		FDAC8977224EDCEC00504C10 /* BasketHat */ = {
 			isa = PBXGroup;
 			children = (
+				FDF99D85225012730085B5FF /* texture.jpg */,
 				FDAC8978224EDCEC00504C10 /* AppDelegate.swift */,
 				FDAC897A224EDCEC00504C10 /* ViewController.swift */,
 				FDAC897C224EDCEC00504C10 /* Main.storyboard */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDF99D86225012730085B5FF /* texture.jpg in Resources */,
 				FDAC8983224EDCED00504C10 /* LaunchScreen.storyboard in Resources */,
 				FDAC8980224EDCED00504C10 /* Assets.xcassets in Resources */,
 				FDAC897E224EDCEC00504C10 /* Main.storyboard in Resources */,
